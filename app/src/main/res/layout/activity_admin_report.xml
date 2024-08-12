@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6360FF"
+    tools:context=".AdminReport">
+
+    <TextView
+        android:id="@+id/editNgoProfileLabel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Reports"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/backButt19"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <View
+        android:id="@+id/editNgoProfileRect4"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButt19" />
+
+    <ImageView
+        android:id="@+id/backButt19"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:contentDescription="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editNgoProfileRect4">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/rectangle2"
+                    android:ems="4"
+                    android:hint="@string/start_date"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#6C6C6C" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text=" to "
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextDate2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/rectangle2"
+                    android:ems="5"
+                    android:hint="@string/end_date"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#6C6C6C" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="#6360FF"
+                    android:text="Filter"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+        </TableLayout>
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle3" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph2"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle3" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph3"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/nbar_rect"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/nbarHome6_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/home_button"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/nbarSearch6_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/search_button"
+            app:srcCompat="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/nbarDictionary6_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/dictionary"
+            app:srcCompat="@drawable/dictionary" />
+
+        <ImageView
+            android:id="@+id/nbarProfile6_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/profile_button"
+            app:srcCompat="@drawable/profile" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

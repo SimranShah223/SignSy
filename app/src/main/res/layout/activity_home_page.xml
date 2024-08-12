@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6360FF"
+    tools:context=".HomePage" >
+
+    <TextView
+        android:id="@+id/homepageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signsy_title"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <LinearLayout
+        android:id="@+id/welcomeUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homepageTitle"
+        app:layout_constraintVertical_bias="0.03">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/user_s_image"
+            android:src="@drawable/boy"
+            tools:ignore="ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_back"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/usersName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/homepageRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUserInfo" />
+
+    <View
+        android:id="@+id/tsignRectangleView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/t_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeUserInfo" />
+
+    <TextView
+        android:id="@+id/tsignLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_bold"
+        android:text="@string/today_s_sign"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tsignRectangleView"
+        app:layout_constraintEnd_toEndOf="@+id/tsignRectangleView"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/tsignRectangleView"
+        app:layout_constraintTop_toTopOf="@+id/tsignRectangleView"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/signName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_name"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tsignRectangleView"
+        app:layout_constraintEnd_toEndOf="@+id/tsignRectangleView"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/tsignRectangleView"
+        app:layout_constraintTop_toTopOf="@+id/tsignRectangleView"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/videoThumbnail"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tsignRectangleView"
+        app:layout_constraintEnd_toEndOf="@+id/tsignRectangleView"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/tsignRectangleView"
+        app:layout_constraintTop_toTopOf="@+id/tsignRectangleView"
+        android:src="@color/black"
+        android:contentDescription="@string/video_thumbnail" />
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videoThumbnail"
+        app:layout_constraintEnd_toEndOf="@+id/videoThumbnail"
+        app:layout_constraintStart_toStartOf="@+id/videoThumbnail"
+        app:layout_constraintTop_toTopOf="@+id/videoThumbnail"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+        android:contentDescription="@string/play" />
+
+    <View
+        android:id="@+id/translateRect"
+        android:layout_width="325dp"
+        android:layout_height="380dp"
+        android:layout_weight="1"
+        android:background="@drawable/translate_rect"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tsignRectangleView" />
+
+    <TextView
+        android:id="@+id/translateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/translate"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/translateRect"
+        app:layout_constraintEnd_toEndOf="@+id/translateRect"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="@+id/translateRect"
+        app:layout_constraintTop_toTopOf="@+id/translateRect"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/translateRect"
+        app:layout_constraintEnd_toEndOf="@+id/translateRect"
+        app:layout_constraintStart_toStartOf="@+id/translateRect"
+        app:layout_constraintTop_toTopOf="@+id/translateRect"
+        app:layout_constraintVertical_bias="0.79">
+
+        <Button
+            android:id="@+id/signToSpeech"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/sign_to_speech"
+            android:textColor="#6360FF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/speechToSign"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/speech_to_sign"
+            android:textColor="#6360FF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bimg1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/ic_baseline_accessibility_new_24"
+        android:contentDescription="@string/sign_to_speech" />
+
+    <ImageView
+        android:id="@+id/bimg2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.87"
+        app:srcCompat="@drawable/ic_baseline_record_voice_over_24"
+        android:contentDescription="@string/speech_to_sign" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/nbar_rect"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/nbarHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/home_button"
+            app:srcCompat="@drawable/home_selected" />
+
+        <ImageView
+            android:id="@+id/nbarSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/search_button"
+            app:srcCompat="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/nbarDictionary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/dictionary"
+            app:srcCompat="@drawable/dictionary" />
+
+        <ImageView
+            android:id="@+id/nbarProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/profile_button"
+            app:srcCompat="@drawable/profile" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

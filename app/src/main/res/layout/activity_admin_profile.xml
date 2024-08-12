@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfile"
+    android:background="#6360FF">
+
+    <ImageView
+        android:id="@+id/backButt16"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:contentDescription="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/adminProfileLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/backButt16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <View
+        android:id="@+id/adminProfileRect"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButt16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/adminProfileRect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminInfo"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/editaProfile"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="#6360FF"
+            android:text="@string/edit_profile"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/changeaPassword"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="#6360FF"
+            android:text="@string/change_password"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/userInfoButt"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="#6360FF"
+            android:text="Client User Info"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/feedbackDisplayButt"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="#6360FF"
+            android:text="Feedbacks"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/appReportsButt"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="#6360FF"
+            android:text="Application Reports"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/logoutaButt"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="2dp"
+            android:backgroundTint="#6360FF"
+            android:text="@string/logout"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/AdminInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout16"
+        app:layout_constraintEnd_toEndOf="@+id/adminProfileRect"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/adminProfileRect"
+        app:layout_constraintVertical_bias="0.03">
+
+        <ImageView
+            android:id="@+id/adminProfilePic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/user_s_image"
+            android:src="@drawable/boy"
+            tools:ignore="ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/adminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin Name"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/adminType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/nbar_rect"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/nbarHome16_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/home_button"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/nbarSearch16_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/search_button"
+            app:srcCompat="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/nbarDictionary16_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/dictionary"
+            app:srcCompat="@drawable/dictionary" />
+
+        <ImageView
+            android:id="@+id/nbarProfile16_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/profile_button"
+            app:srcCompat="@drawable/profile_selected" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

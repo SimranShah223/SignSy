@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "714516782376",
+    "project_id": "signsydb-b6801",
+    "storage_bucket": "signsydb-b6801.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714516782376:android:0506ae4e01965891cbc41d",
+        "android_client_info": {
+          "package_name": "com.signsy.signsymain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714516782376-7bjrj90om0esr3939cm91qkjr2d8ip2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmOGMC2HdRR8zr84cPQ-QRzYX5ft-7ku4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714516782376-7bjrj90om0esr3939cm91qkjr2d8ip2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

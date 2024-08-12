@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6360FF"
+    tools:context=".NewDonation">
+
+    <ImageView
+        android:id="@+id/backButt10"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:contentDescription="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/newDonationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_donation"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/backButt10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <View
+        android:id="@+id/newDonationRect"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButt10" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/newDonationRect"
+        app:layout_constraintVertical_bias="0.15">
+
+        <TextView
+            android:id="@+id/donationDescLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/donation_description"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/donationDesc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle2"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/enter_donation_description"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#818181"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/donationCapacityLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/donation_capacity"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/donationCapacity"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/capacity"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#818181"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/startDateLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/start_date"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/start_date_without_colon"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textColor="#000000"
+                android:textColorHint="#818181"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/endDateLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/end_date"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/endDate"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/end_date_without_colon"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textColor="#000000"
+                android:textColorHint="#818181"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ngoName1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ngoName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ngo_name"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ngoName3"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rectangle2"
+                android:hint="Name"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textColorHint="#818181"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#FF8181"
+            android:text="@string/create"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/nbar_rect"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/nbarHome6_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/home_button"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/nbarSearch6_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/search_button"
+            app:srcCompat="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/nbarDictionary6_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/dictionary"
+            app:srcCompat="@drawable/dictionary" />
+
+        <ImageView
+            android:id="@+id/nbarProfile6_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/profile_button"
+            app:srcCompat="@drawable/profile" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

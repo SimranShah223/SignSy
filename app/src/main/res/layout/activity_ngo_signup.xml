@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6360FF"
+    tools:context=".NgoSignup">
+
+    <View
+        android:id="@+id/ellipse_k"
+        android:layout_width="800dp"
+        android:layout_height="600dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="96dp"
+        android:alpha="0.6"
+        android:background="@drawable/ellipse_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/ellipse_l"
+        android:layout_width="888dp"
+        android:layout_height="888dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:background="@drawable/ellipse_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nSignupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signsy_title"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="55sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/ngoName"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="#3C3C3C"
+                android:textColorHint="#B8B8B8"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/ngoType"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/ngo_type"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="#3C3C3C"
+                android:textColorHint="#B8B8B8"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/nEmail"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/e_mail"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColor="#3C3C3C"
+                android:textColorHint="#B8B8B8"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/ngoPhone"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textColor="#3C3C3C"
+                android:textColorHint="#B8B8B8"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/ngoPassword"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="#3C3C3C"
+                android:textColorHint="#B8B8B8"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/ngoGovNo"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/ngo_gov_no"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="#3C3C3C"
+                android:textColorHint="#B8B8B8"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/ngoWebsite"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle2"
+                android:ems="10"
+                android:hint="@string/ngo_website"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="#3C3C3C"
+                android:textColorHint="#B8B8B8"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/signup2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#6360FF"
+                android:text="@string/sign_up"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/alreadySigned2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#FF8181"
+                android:text="@string/already_signed_up"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
